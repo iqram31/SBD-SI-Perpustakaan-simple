@@ -34,11 +34,11 @@ public class AnggotaDAOImpl implements AnggotaDAO{
     }
 
     @Override
-    public ArrayList<Anggota> getAnggota(String nama) {
+    public ArrayList<Anggota> getAnggota(String namaAnggota) {
         ArrayList<Anggota> arrayAnggota = null;
         PreparedStatement state = null;
 
-        boolean isSearching = nama != null && !nama.isEmpty();
+        boolean isSearching = namaAnggota != null && !namaAnggota.isEmpty();
         String SELECT;
         if (isSearching) {
             SELECT = "SELECT * FROM anggota WHERE nama LIKE ?";
@@ -49,7 +49,7 @@ public class AnggotaDAOImpl implements AnggotaDAO{
         try {
             state = conn.prepareStatement(SELECT);
             if (isSearching) {
-                state.setString(1, "%" + nama + "%");
+                state.setString(1, "%" + namaAnggota + "%");
             }
             ResultSet result = state.executeQuery();
             if (result != null) {
@@ -57,7 +57,7 @@ public class AnggotaDAOImpl implements AnggotaDAO{
 
                 while (result.next()) {
                     Anggota a = new Anggota();
-                    a.setKodeAnggota(result.getInt(1));
+                    a.setKodeAnggota(result.getString(1));
                     a.setNamaAnggota(result.getString(2));
                     //a.set(result.getString(3));
                     //a.setJurusan(result.getString(4));
@@ -133,7 +133,7 @@ public class AnggotaDAOImpl implements AnggotaDAO{
     }
 
     @Override
-    public boolean hapusAnggota(int idAnggota) {
+    public boolean hapusAnggota(String kodeAnggota) {
     String DELETE = "DELETE FROM anggota "
                 + "WHERE nim = ?";
         PreparedStatement state = null;

@@ -16,11 +16,11 @@ public interface AnggotaDAO {
     
     ArrayList <Anggota> getAnggota();
     
-    ArrayList <Anggota> getAnggota(String nama);
+    ArrayList <Anggota> getAnggota(String namaAnggota);
     
     boolean tambahAnggota(Anggota anggota);
 
-    boolean hapusAnggota(int idAnggota);
+    boolean hapusAnggota(String kodeAnggota);
 
     boolean ubahAnggota(Anggota anggota);
 }

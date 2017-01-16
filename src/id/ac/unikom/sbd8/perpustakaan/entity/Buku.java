@@ -17,16 +17,8 @@ public class Buku {
     private String pengarang;
     private String penerbit;
     private String tahunTerbit;
-    private String stok;
+    private String jumlah;
     private String namaJenis;
-
-    public String getNamaJenis() {
-        return namaJenis;
-    }
-
-    public void setNamaJenis(String namaJenis) {
-        this.namaJenis = namaJenis;
-    }
 
     public String getKodeBuku() {
         return kodeBuku;
@@ -76,11 +68,21 @@ public class Buku {
         this.tahunTerbit = tahunTerbit;
     }
 
-    public String getStok() {
-        return stok;
+    public String getJumlah() {
+        return jumlah;
     }
 
-    public void setStok(String stok) {
-        this.stok = stok;
+    public void setJumlah(String jumlah) {
+        this.jumlah = jumlah;
     }
+
+    public String getNamaJenis() {
+        return namaJenis;
+    }
+
+    public void setNamaJenis(String namaJenis) {
+        this.namaJenis = namaJenis;
+    }
+
+   
 }

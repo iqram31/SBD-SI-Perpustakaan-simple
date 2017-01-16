@@ -13,7 +13,7 @@ import java.util.Date;
  * @author Iqram
  */
 public class Anggota {
-    private int kodeAnggota;
+    private String kodeAnggota;
     private String namaAnggota;
     private String tempatLahir;
     private Date tglLahir;
@@ -21,11 +21,11 @@ public class Anggota {
     private String kelas;
     private int noHp;
 
-    public int getKodeAnggota() {
+    public String getKodeAnggota() {
         return kodeAnggota;
     }
 
-    public void setKodeAnggota(int kodeAnggota) {
+    public void setKodeAnggota(String kodeAnggota) {
         this.kodeAnggota = kodeAnggota;
     }
 

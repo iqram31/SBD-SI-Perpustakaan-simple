@@ -16,7 +16,7 @@ public interface BukuDAO {
     
     ArrayList<Buku> getBuku();
     
-    ArrayList<Buku> getBuku(String judul);
+    ArrayList<Buku> getBuku(String namaBuku);
     
     boolean tambahBuku (Buku buku);
     
