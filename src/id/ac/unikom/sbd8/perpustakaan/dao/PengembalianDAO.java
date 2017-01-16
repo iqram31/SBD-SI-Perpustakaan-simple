@@ -5,10 +5,17 @@
  */
 package id.ac.unikom.sbd8.perpustakaan.dao;
 
+import id.ac.unikom.sbd8.perpustakaan.entity.Pengembalian;
+import java.util.ArrayList;
+
 /**
  *
  * @author Iqram
  */
 public interface PengembalianDAO {
+    ArrayList<Pengembalian> getPengembalian();
     
+    ArrayList<Pengembalian> getPengembalian (String kodeKembali);
+    
+    boolean tambahPinjam (Pengembalian kembali);
 }

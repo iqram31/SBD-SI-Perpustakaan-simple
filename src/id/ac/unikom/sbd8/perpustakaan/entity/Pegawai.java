@@ -7,11 +7,11 @@ package id.ac.unikom.sbd8.perpustakaan.entity;
 
 /**
  *
- * @author Iqram
+ * @author Rahadian Nugraha
  */
 public class Pegawai {
     private int idPegawai;
-    private String nama;
+    private String namaPegawai;
     private String username;
     private String password;
     private String hakAkses;
@@ -24,12 +24,12 @@ public class Pegawai {
         this.idPegawai = idPegawai;
     }
 
-    public String getNama() {
-        return nama;
+    public String getNamaPegawai() {
+        return namaPegawai;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setNamaPegawai(String namaPegawai) {
+        this.namaPegawai = namaPegawai;
     }
 
     public String getUsername() {
@@ -55,7 +55,6 @@ public class Pegawai {
     public void setHakAkses(String hakAkses) {
         this.hakAkses = hakAkses;
     }
-
+    
     
 }
-

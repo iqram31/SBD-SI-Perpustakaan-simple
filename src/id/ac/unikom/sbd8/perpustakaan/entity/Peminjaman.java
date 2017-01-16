@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class Peminjaman {
     private String kodePinjam;
-    private int idAnggota;
+    private int kodeAnggota;
     private int idPegawai;
     private Date tglPinjam;
 
@@ -25,12 +25,12 @@ public class Peminjaman {
         this.kodePinjam = kodePinjam;
     }
 
-    public int getIdAnggota() {
-        return idAnggota;
+    public int getKodeAnggota() {
+        return kodeAnggota;
     }
 
-    public void setIdAnggota(int idAnggota) {
-        this.idAnggota = idAnggota;
+    public void setKodeAnggota(int kodeAnggota) {
+        this.kodeAnggota = kodeAnggota;
     }
 
     public int getIdPegawai() {
@@ -48,7 +48,6 @@ public class Peminjaman {
     public void setTglPinjam(Date tglPinjam) {
         this.tglPinjam = tglPinjam;
     }
-
-  
+    
     
 }

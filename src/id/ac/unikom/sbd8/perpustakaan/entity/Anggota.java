@@ -13,7 +13,7 @@ import java.util.Date;
  * @author Iqram
  */
 public class Anggota {
-    private int idAnggota;
+    private int kodeAnggota;
     private String namaAnggota;
     private String tempatLahir;
     private Date tglLahir;
@@ -21,12 +21,12 @@ public class Anggota {
     private String kelas;
     private int noHp;
 
-    public int getIdAnggota() {
-        return idAnggota;
+    public int getKodeAnggota() {
+        return kodeAnggota;
     }
 
-    public void setIdAnggota(int idAnggota) {
-        this.idAnggota = idAnggota;
+    public void setKodeAnggota(int kodeAnggota) {
+        this.kodeAnggota = kodeAnggota;
     }
 
     public String getNamaAnggota() {
@@ -76,4 +76,6 @@ public class Anggota {
     public void setNoHp(int noHp) {
         this.noHp = noHp;
     }
+    
+    
 }

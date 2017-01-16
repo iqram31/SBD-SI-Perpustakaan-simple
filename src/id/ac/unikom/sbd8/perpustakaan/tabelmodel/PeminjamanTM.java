@@ -5,10 +5,42 @@
  */
 package id.ac.unikom.sbd8.perpustakaan.tabelmodel;
 
+import javax.swing.table.AbstractTableModel;
+
 /**
  *
  * @author Iqram
  */
-public class PeminjamanTM {
-    
+public class PeminjamanTM extends AbstractTableModel {
+
+    @Override
+    public int getRowCount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int getColumnCount() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Object getValueAt(int rowIndex, int columnIndex) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getColumnName(int column) {
+        switch (column) {
+            case 0:
+                return "Kode Peminjaman";
+            case 1:
+                return "Nama Anggota";
+            case 2:
+                return "Tgl Pinjam";
+            case 3:
+                return "Operator";
+
+        }
+        return null;
+    }
 }

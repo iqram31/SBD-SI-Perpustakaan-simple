@@ -12,6 +12,7 @@ package id.ac.unikom.sbd8.perpustakaan.entity;
 public class JenisBuku {
     private int kodeJenis;
     private String namaJenis;
+    
 
     public int getKodeJenis() {
         return kodeJenis;

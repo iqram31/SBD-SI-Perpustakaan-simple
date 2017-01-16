@@ -18,6 +18,15 @@ public class Buku {
     private String penerbit;
     private String tahunTerbit;
     private String stok;
+    private String namaJenis;
+
+    public String getNamaJenis() {
+        return namaJenis;
+    }
+
+    public void setNamaJenis(String namaJenis) {
+        this.namaJenis = namaJenis;
+    }
 
     public String getKodeBuku() {
         return kodeBuku;

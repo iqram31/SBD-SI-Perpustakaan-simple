@@ -5,10 +5,19 @@
  */
 package id.ac.unikom.sbd8.perpustakaan.dao;
 
+import id.ac.unikom.sbd8.perpustakaan.entity.Peminjaman;
+import java.util.ArrayList;
+
 /**
  *
  * @author Iqram
  */
 public interface PeminjamanDAO {
+    
+    ArrayList<Peminjaman> getPeminjaman();
+    
+    ArrayList<Peminjaman> getPeminjaman (String kodePinjam);
+    
+    boolean tambahPinjam (Peminjaman pinjam);
     
 }

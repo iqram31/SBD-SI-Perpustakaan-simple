@@ -5,10 +5,18 @@
  */
 package id.ac.unikom.sbd8.perpustakaan.dao;
 
+import id.ac.unikom.sbd8.perpustakaan.entity.DetailPinjam;
+import java.util.ArrayList;
+
 /**
  *
  * @author Iqram
  */
 public interface DetailPinjamDAO {
+ 
+    ArrayList <DetailPinjam> getDetailPinjam();
     
+    ArrayList <DetailPinjam> getDetailPinjam(String kodePinjam);
+    
+    boolean tambahDetailPinjam (DetailPinjam detailpinjam);
 }

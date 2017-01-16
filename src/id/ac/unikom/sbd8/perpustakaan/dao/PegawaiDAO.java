@@ -5,10 +5,12 @@
  */
 package id.ac.unikom.sbd8.perpustakaan.dao;
 
+import id.ac.unikom.sbd8.perpustakaan.entity.Pegawai;
+
 /**
  *
- * @author Iqram
+ * @author Rahadian Nugraha
  */
 public interface PegawaiDAO {
-    
+    Pegawai login (String username, String password);
 }

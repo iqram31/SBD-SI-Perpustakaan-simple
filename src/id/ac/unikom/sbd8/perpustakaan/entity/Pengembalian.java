@@ -18,6 +18,24 @@ public class Pengembalian {
     private int idPegawai;
     private Date tglKembali;
     private int denda;
+    private String namaAnggota;
+    private String Operator;
+
+    public String getNamaAnggota() {
+        return namaAnggota;
+    }
+
+    public void setNamaAnggota(String namaAnggota) {
+        this.namaAnggota = namaAnggota;
+    }
+
+    public String getOperator() {
+        return Operator;
+    }
+
+    public void setOperator(String Operator) {
+        this.Operator = Operator;
+    }
 
     public String getKodeKembali() {
         return kodeKembali;
